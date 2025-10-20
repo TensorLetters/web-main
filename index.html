@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tensorletters</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-dark: #0f172a;
+      --bg-light: #1e293b;
+      --accent: #38bdf8;
+      --accent-hover: #0ea5e9;
+      --text-light: #f1f5f9;
+      --text-muted: #94a3b8;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: radial-gradient(circle at top left, var(--bg-light), var(--bg-dark));
+      color: var(--text-light);
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+      letter-spacing: -0.02em;
+    }
+
+    .tagline {
+      font-size: 1.3rem;
+      color: var(--text-muted);
+      margin-bottom: 2.5rem;
+    }
+
+    .socials {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .socials a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s ease;
+    }
+
+    .socials a:hover {
+      color: var(--text-light);
+    }
+
+    .blog-link {
+      display: inline-block;
+      font-weight: 600;
+      text-decoration: none;
+      color: var(--bg-dark);
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.2s ease, color 0.2s ease;
+      background-color: white;
+      padding: 8px;
+      border-radius: 20px;
+    }
+
+    .blog-link:hover {
+      background-color: var(--accent);
+      color:var(--bg-dark)
+    }
+
+    .newsletter {
+      margin-top: 3rem;
+    }
+
+    input[type="email"] {
+      padding: 0.7rem 1rem;
+      border-radius: 9999px;
+      border: 1px solid var(--accent);
+      background-color: transparent;
+      color: var(--text-light);
+      outline: none;
+      width: 260px;
+      margin-right: 0.5rem;
+    }
+
+    input::placeholder {
+      color: var(--text-muted);
+    }
+
+    button {
+      padding: 0.7rem 1.3rem;
+      border: none;
+      border-radius: 9999px;
+      background-color: var(--accent);
+      color: var(--bg-dark);
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s ease;
+    }
+
+    button:hover {
+      background-color: var(--accent-hover);
+    }
+
+    .email {
+      margin-top: 2rem;
+      color: var(--text-muted);
+    }
+
+    .email a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    footer {
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #64748b;
+    }
+  </style>
+</head>
+<body>
+  <h1>TensorLetters</h1>
+  <p class="tagline">Teaching Robotics, Embodied AI and Modern Tech</p>
+
+  <div class="socials">
+    <a href="https://linkedin.com/company/tensorletters" target="_blank">LinkedIn</a>
+    <a href="https://instagram.com/tensorletters" target="_blank">Instagram</a>
+    <a href="https://youtube.com/@tensorletters" target="_blank">YouTube</a>
+    <a href="https://tiktok.com/@tensorletters" target="_blank">TikTok</a>
+    <a href="https://x.com/tensorletters" target="_blank">X</a>
+  </div>
+
+  <a href="https://blogs.tensorletters.com" target="_blank" class="blog-link">Visit our Blog →</a>
+
+  <div class="newsletter">
+    <h3>Join our newsletter</h3>
+    <form onsubmit="alert('Thanks for subscribing!'); return false;">
+      <input type="email" placeholder="Enter your email" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </div>
+
+  <div class="email">
+    Contact us: <a href="mailto:tensorletters@gmail.com">tensorletters@gmail.com</a>
+  </div>
+
+  <footer>
+    © 2025 Tensorletters. All rights reserved.
+  </footer>
+</body>
+</html>
