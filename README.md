@@ -1,2 +1,2 @@
 # web-main
-Main website for organization. Tensorletters.com
+Main website for our organization. Tensorletters.com
